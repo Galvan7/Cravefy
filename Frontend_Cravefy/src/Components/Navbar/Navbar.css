@@ -1,9 +1,14 @@
-.navbar{
+.navbar {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0; /* Added to define the sticky offset */
+    background-color: white; /* Optional: ensure the navbar has a background */
+    z-index: 1000; /* Optional: ensure the navbar is above other content */
 }
+
 .navbar .logo{
     width: 150px;
 }
