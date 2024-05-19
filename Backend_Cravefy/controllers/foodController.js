@@ -25,7 +25,7 @@ const addFood=async(req,res)=>{
 const listFood= async(req,res)=>{
     try{
         const foods= await foodModel.find({})//all the data of food items we can find from db using model
-        res.json({Success:true , data:foods})
+        res.json({success:true , data:foods})
     }catch(error){
         console.log(error)
         res.json({success:false, message:"Error"})
