@@ -24,7 +24,7 @@ const Navbar = ({setShowLogin}) => {
         <a href='#footer' onClick={()=>setMenu("contact-us")}className={menu==="contact-us"?"active" : ""}>Contact US</a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
+        {/* <img src={assets.search_icon} alt="" /> */}
         
         <div className="navbar-search-icon">
           <Link to='/cart'> <img src={assets.basket_icon} alt="" /></Link>
@@ -34,7 +34,7 @@ const Navbar = ({setShowLogin}) => {
         <div className='navbar-profile'>
           <img src={assets.profile_icon} alt="" />
           <ul className="nav-profile-dropdown">
-            <li><img src={assets.bag_icon} alt="" />Orders</li>
+            <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon} alt="" />Orders</li>
             <hr />
             <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
           </ul>

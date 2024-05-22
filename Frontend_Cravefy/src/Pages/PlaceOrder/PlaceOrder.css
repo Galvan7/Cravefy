@@ -36,3 +36,9 @@
 .cart-total h2{
     margin-bottom: 10px;
 }
+
+@media (max-width:750px){
+    .place-order{
+        flex-direction: column;
+    }
+}
