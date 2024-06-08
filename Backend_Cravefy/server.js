@@ -11,7 +11,9 @@ const app=express()
 const port=4000
 
 //middleware
-app.use(cors())
+app.use(cors({
+    
+}))
 app.use(express.json())
 
 //db connection

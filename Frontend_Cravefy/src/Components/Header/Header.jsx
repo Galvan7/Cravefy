@@ -14,7 +14,7 @@ const Header = () => {
           you the finest gastronomic experiences, ensuring that every craving is
           met with perfection—delivered straight to your doorsteps.
         </p>
-        <button>View Menu</button>
+        <button>Scroll to view menu</button>
       </div>
     </div>
   );
