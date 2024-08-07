@@ -1,0 +1,68 @@
+/* CSS for the Loading Component */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f8f9fa;
+    text-align: center;
+    padding: 0 20px; /* Add some padding for small screens */
+}
+
+.loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.loading-subtext {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .loading-text {
+        font-size: 1.5rem;
+    }
+
+    .loading-subtext {
+        font-size: 0.875rem;
+    }
+
+    .loading-spinner {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-text {
+        font-size: 1.25rem;
+    }
+
+    .loading-subtext {
+        font-size: 0.75rem;
+    }
+
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+    }
+}
